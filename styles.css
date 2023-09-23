@@ -357,3 +357,15 @@ footer{
 footer p{
     text-align: center;
 }
+
+
+
+/* Additional */
+.just-list{
+    margin-bottom: 1rem;
+}
+.just-list li{
+    list-style: none;
+    align-items: flex-start;
+    font-weight: 450;
+}
