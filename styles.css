@@ -369,3 +369,9 @@ footer p{
     align-items: flex-start;
     font-weight: 450;
 }
+.p-tag h3{
+    margin-bottom: 1rem;
+}
+.p-tag p{
+    font-weight: 600;
+}
