@@ -220,6 +220,7 @@ section{
 .about-containers{
     gap: 2rem;
     margin-bottom: 2rem;
+    flex-basis: ;
 }
 .about-details-container{
     justify-content: center;
@@ -374,4 +375,9 @@ footer p{
 }
 .p-tag p{
     font-weight: 600;
+}
+
+
+.rowcenter{
+    text-align: center;
 }
