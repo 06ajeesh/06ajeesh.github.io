@@ -1138,3 +1138,11 @@ section {
   margin-bottom: 40px;
   font-weight: 600;
 }
+.portfolio-wrap img{
+  object-fit: cover;
+  align-items: center;
+  margin: auto;
+}
+.portfolio-description p{
+  text-align: justify;
+}
