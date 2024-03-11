@@ -11,11 +11,11 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" />
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" />
-    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="manifest" href="assets/img/site.webmanifest" />
 
     <!-- Google Fonts -->
     <link
@@ -894,6 +894,7 @@
                     <input
                       type="text"
                       name="name"
+                      id="nameInput"
                       placeholder="Your name"
                       class="contact_inputs"
                       required
@@ -908,7 +909,8 @@
                     <input
                       type="hidden"
                       name="subject"
-                      value="${name} sent a message from portfolio"
+                      id="subjectInput"
+                      value=""
                     />
                     <textarea
                       name="message"
@@ -952,47 +954,25 @@
                       document.getElementById("form_contact").reset();
                     };
                   </script>
+                  
+                  <script>
+                    const nameInput=document.getElementById('nameInput');
+                    const subjectInput=document.getElementById('subjectInput');
+                    nameInput.addEventListener('input',function(){
+                      subjectInput.value = `${nameInput.value} sent a message from portfolio`;
+                    });
+                  </script>
+
                   <div class="contact_right">
                     <img src="assets/img/right_img.png" alt="" />
                   </div>
                 </div>
               </div>
-
-              <!-- <form  method="post" role="form" class="php-email-form">
-              <div class="form-group" style="text-align: center;">
-                <label for="name" style="font-size: x-large;margin-top: 2%;"><b>Get in touch</b></label>
-              </div>
-
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="" name="email" id="email" style="width: max-content;" required>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="name" style="padding-right :28px;">Subject</label>
-                <input type="text" class="" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name" style="padding-right: 18px;">Message</label>
-                <textarea class="" name="message" rows="9" style="width: 80%;" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form> -->
             </div>
           </div>
         </div>
       </section>
+
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
@@ -1035,3 +1015,36 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
+<!-- excluded -->
+<!-- <form  method="post" role="form" class="php-email-form">
+              <div class="form-group" style="text-align: center;">
+                <label for="name" style="font-size: x-large;margin-top: 2%;"><b>Get in touch</b></label>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="" name="email" id="email" style="width: max-content;" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="name" style="padding-right :28px;">Subject</label>
+                <input type="text" class="" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name" style="padding-right: 18px;">Message</label>
+                <textarea class="" name="message" rows="9" style="width: 80%;" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form> -->
