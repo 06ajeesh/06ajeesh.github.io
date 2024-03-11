@@ -1122,14 +1122,16 @@ section {
 /* Just My */
 .bottom_space {
   margin-bottom: 40px;
-  font-weight: 600;
+  font-weight: 500;
+  text-align: justify;
 }
 .portfolio-wrap img {
   object-fit: cover;
   align-items: center;
   margin: auto;
 }
-.portfolio-description p {
+
+.allign_just{
   text-align: justify;
 }
 
