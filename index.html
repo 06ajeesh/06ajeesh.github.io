@@ -4,8 +4,6 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
     <title>Ajeesh Portfolio</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
@@ -887,7 +885,7 @@
 
                     <input
                       type="hidden"
-                      name="access_key"
+                      name="apikey"
                       value="681cac4c-b2a5-444c-bc32-a8bdd2b35351"
                     />
 
@@ -921,13 +919,7 @@
                       required
                     ></textarea>
 
-                    <button
-                      type="submit"
-                      class="g-recaptcha"
-                      data-sitekey="6LeofZUpAAAAACQ0Q_AVBEHP_5aH7JSXyGmgLaPn"
-                      data-callback="onSubmit"
-                      data-action="submit"
-                    >
+                    <button type="submit">
                       Submit <img src="assets/img/arrow_icon.png" alt="" />
                     </button>
 
@@ -954,11 +946,12 @@
                       document.getElementById("form_contact").reset();
                     };
                   </script>
-                  
+
                   <script>
-                    const nameInput=document.getElementById('nameInput');
-                    const subjectInput=document.getElementById('subjectInput');
-                    nameInput.addEventListener('input',function(){
+                    const nameInput = document.getElementById("nameInput");
+                    const subjectInput =
+                      document.getElementById("subjectInput");
+                    nameInput.addEventListener("input", function () {
                       subjectInput.value = `${nameInput.value} sent a message from portfolio`;
                     });
                   </script>
