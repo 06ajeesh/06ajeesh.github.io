@@ -700,6 +700,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1115,7 +1116,10 @@ section {
   }
 }
 
-/* Just My */
+
+/* ----------------------------Just My-------------------------------------- */
+
+
 .bottom_space {
   margin-bottom: 40px;
   font-weight: 500;
@@ -1237,4 +1241,29 @@ section {
   font-family: "Open Sans", sans-serif;
   color: #272829;
   background: linear-gradient(250deg,#35abbb,#d94bb5);
+}
+
+.title_head{
+ font-style: italic;
+}
+
+.project_gallery{
+  margin: 40px 0px 20px 20px;
+}
+.project_gallery h2{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project_item{
+  display: inline-block;
+  margin: 30px;
+  height: 500px;
+  margin: 30px 40px;
+  text-align: center;
+}
+.project_item img{
+  max-height: 100%;
+  width: auto;
 }
