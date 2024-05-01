@@ -1258,7 +1258,6 @@ section {
 
 .project_item{
   display: inline-block;
-  margin: 30px;
   height: 500px;
   margin: 30px 40px;
   text-align: center;
@@ -1267,3 +1266,18 @@ section {
   max-height: 100%;
   width: auto;
 }
+.project_item_scaled{
+  display: inline-block;
+  margin: 30px 40px;
+  text-align: center;
+  width: 450px;
+}
+.project_item_scaled img{
+  max-width: 100%;
+  width: auto;
+}
+.project_item_scaled p{
+    text-align: justify
+}
+
+
