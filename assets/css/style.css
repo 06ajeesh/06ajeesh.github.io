@@ -1276,7 +1276,8 @@ section {
   max-width: 100%;
   width: auto;
 }
-.project_item_scaled p{
+.project_gallery p{
+  margin: 10px 20px;
     text-align: justify
 }
 
