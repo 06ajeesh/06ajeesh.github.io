@@ -1,0 +1,3 @@
+name="Python"
+description="Features of Python"
+packages=["pygame","numpy","pandas"]
