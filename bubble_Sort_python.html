@@ -1,49 +1,55 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-        <link rel="stylesheet" href="python assets/css/example.css" />
-        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-        <style>
-            #loading { outline: none; border: none; background: transparent }
-        </style>
-        <script type="module">
-            const loading = document.getElementById('loading');
-            addEventListener('py:ready', () => loading.close());
-            loading.showModal();
-        </script>
-        <title id="header-title"></title>
-        <link rel="icon" type="image/png" href="python assets/favicon.png" />
-    </head>
 
-    <body>
-        <dialog id="loading">
-            <h1>Loading...</h1>
-        </dialog>
-        <nav class="navbar" style="background-color: #000000">
-            <div class="app-header">
-                <a href="/">
-                    <img src="python assets/logo.png" class="logo" alt="image"/>
-                </a>
-                <a class="title" id="page-title" href="" style="color: #f0ab3c"></a>
-            </div>
-        </nav>
-        <br />
-        <div id="page-message"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link rel="stylesheet" href="python assets/css/example.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        #loading {
+            outline: none;
+            border: none;
+            background: transparent
+        }
+    </style>
+    <script type="module">
+        const loading = document.getElementById('loading');
+        addEventListener('py:ready', () => loading.close());
+        loading.showModal();
+    </script>
+    <title id="header-title"></title>
+    <link rel="icon" type="image/png" href="python assets/favicon.png" />
+</head>
 
-        <div id="pandas-output" hidden>
-            <h3>Output</h3>
-            <div id="pandas-output-inner"></div>
+<body>
+    <dialog id="loading">
+        <h1>Loading...</h1>
+    </dialog>
+    <nav class="navbar" style="background-color: #000000">
+        <div class="app-header">
+            <a href="/">
+                <img src="python assets/logo.png" class="logo" alt="image" />
+            </a>
+            <a class="title" id="page-title" href="" style="color: #f0ab3c"></a>
         </div>
-        <div id="pandas-dev-console" hidden>
-            <h3>Dev Console</h3>
-            <script type="py" terminal></script>
-        </div>
-        <section class="pyscript">
-            <script type="py" src="sorting_visualisation.py" config="pyscript.toml"></script>
-        </section>
+    </nav>
+    <br />
+    <div id="page-message"></div>
 
-    </body>
+    <div id="pandas-output" hidden>
+        <h3>Output</h3>
+        <div id="pandas-output-inner"></div>
+    </div>
+    <div id="pandas-dev-console" hidden>
+        <h3>Dev Console</h3>
+        <script type="py" terminal></script>
+    </div>
+    <section class="pyscript">
+        <script type="py" src="sorting_visualisation.py" config="pyscript.toml"></script>
+    </section>
+
+</body>
+
 </html>
